@@ -1,1 +1,1 @@
-export {addNoResultsMessage} from "EntityLists";
+export {addNoResultsMessage} from "./EntityLists";
