@@ -1,1 +1,1 @@
-export {addNoResultsMessage} from "EntityLists.js";
+export {addNoResultsMessage} from "EntityLists";

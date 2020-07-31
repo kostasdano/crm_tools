@@ -1,4 +1,4 @@
-import addNoResultsMessage from "EntityLists";
+import {addNoResultsMessage} from "EntityLists";
 
 console.log('CRM TOOL INITIALIAZE');
 
