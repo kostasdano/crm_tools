@@ -1,12 +1,12 @@
 import {addNoResultsMessage} from "./EntityLists";
-
-console.log('CRM TOOL INITIALIAZE');
+import {homepageRedirect} from "./Generic";
 
 
 const CRM_TOOLS = {
   'lead': () => leadTool(),
   'createWrite': (containerId, writer) => createWriter(containerId, writer),
   'addNoResultsMessage': () => addNoResultsMessage(),
+  'homepageRedirect': () => homepageRedirect(),
 }
 
 const writerTemplate = ({name, surname, id}) => `<div id='${id}' class="writer">
