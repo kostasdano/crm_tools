@@ -1,5 +1,5 @@
 import {addNoResultsMessage} from "./EntityLists";
-import {homepageRedirect} from "./Generic";
+import {homepageRedirect, hideToggleButton} from "./Generic";
 
 
 const CRM_TOOLS = {
@@ -7,6 +7,7 @@ const CRM_TOOLS = {
   'createWrite': (containerId, writer) => createWriter(containerId, writer),
   'addNoResultsMessage': () => addNoResultsMessage(),
   'homepageRedirect': () => homepageRedirect(),
+  'hideToggleButton': () => hideToggleButton(),
 }
 
 const writerTemplate = ({name, surname, id}) => `<div id='${id}' class="writer">
