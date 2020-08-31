@@ -1,0 +1,178 @@
+.row{
+    margin-left:0px;
+    margin-right:0px;
+}
+
+#wrapper {
+    padding-left: 261px;
+    /* left: 250px; */
+    /* height: 100% */
+}
+
+#sidebar-wrapper {
+  margin-top: 62px;
+  margin-left: -261px;
+  left: 261px;
+  width: 261px;
+  background: rgb(255, 255, 255);
+  position: fixed;
+  height: 100%;
+  z-index: 1000;
+  overflow: auto;
+  padding-bottom: 45px;
+}
+
+.sidebar-nav {
+    display: block;
+    /* float: left; */
+    width: 250px;
+    list-style: none;
+    margin: 10px 5px;
+    padding: 0 40px 0 0;
+}
+
+#page-content-wrapper {
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+    padding-top: 62px;
+}
+
+
+#sidebar_menu li a, .sidebar-nav li a {
+    color: #111;
+    float: left;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    background: rgb(255, 255, 255);
+}
+
+.sidebar-nav li {
+  line-height: 40px;
+}
+
+.sidebar-nav li a {
+  color: #111;
+  display: block;
+  text-decoration: none;
+  margin: 5px 0 0 10px;
+}
+
+.sidebar-nav li a:hover {
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.sidebar-nav-active {
+  background-color: #f5f5f5 !important;
+  border-radius: 20px !important;
+  text-decoration: none !important;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  line-height: 60px;
+  font-size: 18px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: rgb(255, 255, 255);
+  background: none;
+}
+
+.sidebar-icon {
+  margin: 0 0 4px 0;
+}
+
+.sub-icon-wrapper {
+  padding-right: 6px;
+}
+
+.sidebar-sub-icon {
+  margin: 0 0 4px 0;
+  height: 16px;
+  width: 16px;
+}
+
+.sidebar-col-icon {
+  padding: 0;
+  text-align: end;
+}
+
+.sidebar-col-label {
+  padding: 0 1rem 0 0.75rem;
+}
+
+.sidebar-row {
+  padding-left: 33px;
+}
+
+.sidebar-arrow-up {
+  transform: rotate(-90deg);
+  pointer-event: none;
+}
+
+.dropdown-clickable {
+  pointer-event: none;
+}
+
+.sidebar-arrow {
+  margin-bottom: 0.45rem;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.dropdown-ul {
+  margin: 0 !important;
+}
+
+
+/* Hide Sidebar Classes */
+
+.wrapper-hidden {
+  padding-left: 70px !important;
+}
+
+.sidebar-wrapper-hidden {
+  width: 73px !important;
+}
+
+.sidebar-hidden {
+  width: 78px !important;
+}
+
+.sidebar-icon-hidden {
+  margin: 0 !important;
+}
+
+
+.li-a-hidden {
+  padding: 5px !important;
+  margin: 3px !important;
+  line-height: initial !important;
+}
+
+.sidebar-col-icon-hidden {
+  padding: 0 !important;
+  text-align: center !important;
+}
+
+.hidden-element {
+  display: none !important;
+}
+
+.dropdown-row-hidden {
+  padding: 0 0 5px 6px;
+}
