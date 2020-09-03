@@ -69,7 +69,7 @@ a, td {
   width: 39rem !important;
   height: 4.5rem !important;
   text-indent: 38px;
-    background-image: url(/search_icon.png);
+    background-image: url("./media/search_icon.png");
     background-repeat: no-repeat, repeat;
     background-position: left 1.2em top 50%, 0 0;
     background-blend-mode: color-burn;

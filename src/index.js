@@ -1,5 +1,6 @@
 import {addNoResultsMessage} from "./EntityLists";
 import {homepageRedirect, hideToggleButton} from "./Generic";
+import './css/index.css';
 
 
 const CRM_TOOLS = {
