@@ -17,7 +17,7 @@
   background: rgb(255, 255, 255);
   position: fixed;
   height: 100%;
-  z-index: 1000;
+  z-index: 950;
   overflow: auto;
   padding-bottom: 45px;
 }

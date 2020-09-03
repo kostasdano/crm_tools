@@ -21,7 +21,7 @@ body {
 
 .popover,
 .bootstrap-datetimepicker-widget {
-    z-index: 900;
+    z-index: 980;
 }
 
 .modal {
