@@ -1,15 +1,22 @@
 {
-  "name": "vanilla",
+  "name": "crm-tools",
   "version": "1.0.0",
-  "description": "JavaScript example starter project",
-  "main": "index.html",
+  "description": "CRM TOOLS",
+  "main": "build/index.js",
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "prebuild": "rm -rf build",
+    "build": "npm run prebuild && parcel build src/index.js -d build --public-url ./",
+    "lint": "eslint src/**/*.js"
   },
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "7.2.0",
+    "babel-eslint": "^10.1.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^7.8.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
     "parcel-bundler": "^1.12.4"
   },
   "keywords": [
