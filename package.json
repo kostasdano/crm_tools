@@ -6,7 +6,8 @@
   "scripts": {
     "prebuild": "rm -rf build",
     "build": "npm run prebuild && parcel build src/index.js -d build --public-url ./",
-    "lint": "eslint src/**/*.js"
+    "lint": "eslint src/**/*.js",
+    "cleanbuild": "parcel build src/index.js -d build --public-url ./"
   },
   "dependencies": {},
   "devDependencies": {
