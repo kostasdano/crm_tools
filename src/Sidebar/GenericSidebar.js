@@ -1,5 +1,7 @@
+import { toggleSidebar } from './ToggleSidebar';
+
 export function genericSidebar() {
-    if(window.sessionStorage.getItem("sidebar") === null) {
+    if (window.sessionStorage.getItem("sidebar") === null) {
       console.log("initializing sidebar token");
       window.sessionStorage.setItem("sidebar", "open");
     } else if(window.sessionStorage.getItem("sidebar") === "closed") {
