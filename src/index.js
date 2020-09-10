@@ -8,7 +8,7 @@ const CRM_TOOLS = {
   homepageRedirect: () => homepageRedirect(),
   hideToggleButton: () => hideToggleButton(),
   genericSidebar: () => genericSidebar(),
-  toggleDropdown: () => toggleDropdown(),
+  toggleDropdown: (event) => toggleDropdown(event),
   toggleSidebar: (change_token = true) => toggleSidebar(change_token),
 };
 
