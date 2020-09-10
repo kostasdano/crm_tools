@@ -10,7 +10,7 @@ export function genericSidebar() {
       const current_path = window.location.pathname;
         var rows = document.getElementsByClassName("sidebar-link");
         var path = current_path.split('/')[2] === "" ? '/' + current_path.split('/')[1] + '/': '/' + window.location.pathname.split('/')[1] + '/' + window.location.pathname.split('/')[2] + '/';
-        for(i=0; i<rows.length; i++) {
+        for(var i=0; i<rows.length; i++) {
           if(rows[i].getAttribute('href') === path) {
             rows[i].className += " sidebar-nav-active";
           }
