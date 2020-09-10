@@ -1,1 +1,1 @@
-export { homepageRedirect, hideToggleButton } from "./Generic";
+export { homepageRedirect, hideToggleButton } from './Generic';
