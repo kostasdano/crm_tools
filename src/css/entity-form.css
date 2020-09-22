@@ -126,6 +126,12 @@ select {
   box-shadow: none;
 }
 
+.subgrid > .btn-primary {
+  width: auto;
+  height: auto;
+  padding: 0;
+}
+
 /* entity notes css */
 
 .postedon .timeago {
