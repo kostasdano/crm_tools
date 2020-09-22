@@ -126,10 +126,11 @@ select {
   box-shadow: none;
 }
 
-.subgrid .grid-actions .btn-primary {
+.subgrid .grid-actions .btn-primary,
+.subgrid .grid-actions .btn-info {
   width: auto;
   height: auto;
-  padding: 0;
+  padding: 6px 12px;
 }
 
 /* entity notes css */
