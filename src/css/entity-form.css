@@ -126,7 +126,7 @@ select {
   box-shadow: none;
 }
 
-.subgrid .btn-primary {
+.subgrid .grid-actions .btn-primary {
   width: auto;
   height: auto;
   padding: 0;
