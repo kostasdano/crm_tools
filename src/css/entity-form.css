@@ -142,6 +142,11 @@ select {
   border-radius: 4px;
 }
 
+.btn-default {
+  color: #232d7d;
+  border-color: #232d7d;
+}
+
 /* entity notes css */
 
 .postedon .timeago {
