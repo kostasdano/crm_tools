@@ -105,7 +105,7 @@ span[aria-label='Choose a date'] {
   border-top-left-radius: 4px;
 }
 
-select {
+select:not([readonly="readonly"]) {
   appearance: none;
   /* background-color: #fff; */
   background-image: url(./media/arrow_down.svg) !important;
