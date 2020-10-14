@@ -1,6 +1,7 @@
 import { addNoResultsMessage } from './EntityLists';
 import { homepageRedirect, hideToggleButton } from './Generic';
 import { genericSidebar, toggleDropdown, toggleSidebar } from './Sidebar';
+import { multiselectField } from './WebForms';
 import './css/index.css';
 
 const CRM_TOOLS = {
@@ -10,6 +11,7 @@ const CRM_TOOLS = {
   genericSidebar: () => genericSidebar(),
   toggleDropdown: (event) => toggleDropdown(event),
   toggleSidebar: (change_token = true) => toggleSidebar(change_token),
+  multiselectField: (custom_id, select_options, label, edit) => multiselectField(custom_id, select_options, label, edit)
 };
 
 class OrfiumSupportCRM {
