@@ -1,44 +1,77 @@
+function toggleClass(className, toggleClassName) {
+  var element = document.getElementsByClassName(className);
+  for(var i = 0; i < element.length; i++){
+    element[i].classList.toggle(toggleClassName);
+  }
+}
+
 export function toggleSidebar(change_token = true) {
   document.getElementById('wrapper').classList.toggle('wrapper-hidden');
   document.getElementById('sidebar-wrapper').classList.toggle('sidebar-wrapper-hidden');
   document.getElementById('sidebar').classList.toggle('sidebar-hidden');
-  var anchors = document.getElementsByClassName('sidebar-link');
-  for (var i = 0; i < anchors.length; i++) {
-    anchors[i].classList.toggle('li-a-hidden');
-  }
-  var icons = document.getElementsByClassName('sidebar-col-icon');
-  for (var i = 0; i < icons.length; i++) {
-    icons[i].classList.toggle('sidebar-col-icon-hidden');
-  }
-  var labels = document.getElementsByClassName('sidebar-col-label');
-  for (var i = 0; i < labels.length; i++) {
-    labels[i].classList.toggle('hidden-element');
-  }
-  var arrows = document.getElementsByClassName('sidebar-arrow');
-  for (var i = 0; i < arrows.length; i++) {
-    arrows[i].classList.toggle('hidden-element');
-  }
-  var dropdowns = document.getElementsByClassName('dropdown-sidebar');
-  for (var i = 0; i < dropdowns.length; i++) {
-    dropdowns[i].classList.toggle('sidebar-hidden');
-  }
-  var col_icons = document.getElementsByClassName('sidebar-icon');
-  for (var i = 0; i < col_icons.length; i++) {
-    col_icons[i].classList.toggle('sidebar-icon-hidden');
-  }
-  var sub_icons = document.getElementsByClassName('sidebar-sub-icon');
-  for (var i = 0; i < sub_icons.length; i++) {
-    sub_icons[i].classList.toggle('sidebar-icon-hidden');
-  }
-  var dropdown_rows = document.getElementsByClassName('dropdown-row');
-  for (var i = 0; i < dropdown_rows.length; i++) {
-    dropdown_rows[i].classList.toggle('dropdown-row-hidden');
-  }
 
-  var links = document.getElementsByClassName('sidebar-link');
-  for (var i = 0; i < links.length; i++) {
-    links[i].classList.toggle('dropdown-row-hidden');
-  }
+  // var anchors = document.getElementsByClassName('sidebar-link');
+  // for (var i = 0; i < anchors.length; i++) {
+  //   anchors[i].classList.toggle('li-a-hidden');
+  // }
+
+  toggleClass('sidebar-link','li-a-hidden');
+
+  // var icons = document.getElementsByClassName('sidebar-col-icon');
+  // for (var i = 0; i < icons.length; i++) {
+  //   icons[i].classList.toggle('sidebar-col-icon-hidden');
+  // }
+
+  toggleClass('sidebar-col-icon','sidebar-col-icon-hidden');
+
+  // var labels = document.getElementsByClassName('sidebar-col-label');
+  // for (var i = 0; i < labels.length; i++) {
+  //   labels[i].classList.toggle('hidden-element');
+  // }
+
+  toggleClass('sidebar-col-label','hidden-element');
+
+  // var arrows = document.getElementsByClassName('sidebar-arrow');
+  // for (var i = 0; i < arrows.length; i++) {
+  //   arrows[i].classList.toggle('hidden-element');
+  // }
+
+  toggleClass('sidebar-arrow','hidden-element');
+
+  // var dropdowns = document.getElementsByClassName('dropdown-sidebar');
+  // for (var i = 0; i < dropdowns.length; i++) {
+  //   dropdowns[i].classList.toggle('sidebar-hidden');
+  // }
+
+  toggleClass('dropdown-sidebar','sidebar-hidden');
+
+  // var col_icons = document.getElementsByClassName('sidebar-icon');
+  // for (var i = 0; i < col_icons.length; i++) {
+  //   col_icons[i].classList.toggle('sidebar-icon-hidden');
+  // }
+
+  toggleClass('sidebar-icon','sidebar-icon-hidden');
+
+  // var sub_icons = document.getElementsByClassName('sidebar-sub-icon');
+  // for (var i = 0; i < sub_icons.length; i++) {
+  //   sub_icons[i].classList.toggle('sidebar-icon-hidden');
+  // }
+
+  toggleClass('sidebar-sub-icon','sidebar-icon-hidden');
+
+  // var dropdown_rows = document.getElementsByClassName('dropdown-row');
+  // for (var i = 0; i < dropdown_rows.length; i++) {
+  //   dropdown_rows[i].classList.toggle('dropdown-row-hidden');
+  // }
+
+  toggleClass('dropdown-row','dropdown-row-hidden');
+
+  // var links = document.getElementsByClassName('sidebar-link');
+  // for (var i = 0; i < links.length; i++) {
+  //   links[i].classList.toggle('dropdown-row-hidden');
+  // }
+
+  toggleClass('sidebar-link','dropdown-row-hidden');
 
   if (change_token) {
     if (window.sessionStorage.getItem('sidebar') === 'open') {
